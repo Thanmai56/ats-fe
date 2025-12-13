@@ -11,26 +11,37 @@ const header = () => {
    }
   return (
     <header className="flex justify-between items-center py-4 px-4 lg:px-20" >
-            <h2 className="text-2xl md:text-3xl lg:text-5xl font-light m-0"> 
+            <h2 data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" className="text-2xl md:text-3xl lg:text-5xl font-light m-0"> 
                 RIQ
             </h2>
             <nav className="hidden md:flex items-center gap-12 lg:gap-20">
-                <a className="text-base tracking-wider transition-colors hover:text-grey-300 
+                <a data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000"className="text-base tracking-wider transition-colors hover:text-grey-300 
                 z-50" href="#">
                     Docs 
                 </a>
 
-                <a className="text-base tracking-wider transition-colors hover:text-grey-300 
+                <a data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"className="text-base tracking-wider transition-colors hover:text-grey-300 
                 z-50" href="#">
                      Templates
                 </a>
 
-                <a className="text-base tracking-wider transition-colors hover:text-grey-300 
+                <a data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="2000"className="text-base tracking-wider transition-colors hover:text-grey-300 
                 z-50" href="#">
                     Features 
                 </a>
 
-                <a className="text-base tracking-wider transition-colors hover:text-grey-300 
+                <a data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="2500"
+     className="text-base tracking-wider transition-colors hover:text-grey-300 
                 z-50" href="#">
                     Resume check 
                 </a>

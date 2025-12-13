@@ -1,8 +1,18 @@
 import Header from "./components/header"
 import Hero from "./components/Hero"
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { use, useEffect } from "react";
 
 export default function App() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1500, // Animation duration in milliseconds
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
+
   return (
     <main>
       {/* img*/}
