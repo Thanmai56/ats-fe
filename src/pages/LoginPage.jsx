@@ -252,10 +252,10 @@ const LoginPage = () => {
                 </div>
 
                 {/* 3D Background Element */}
-                <Spline 
+                {/* <Spline 
                     className="absolute lg:top-[-5%] lg:right-[-10%] h-[800px] w-[800px] opacity-20 pointer-events-none"
                     scene="https://prod.spline.design/hwiWk6EJqZrjuYYp/scene.splinecode"
-                />
+                /> */}
             </main>
 
             {/* Bottom Footer */}
