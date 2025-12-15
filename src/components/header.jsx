@@ -1,6 +1,8 @@
 import React from 'react'
 import 'boxicons/css/boxicons.min.css';
-const header = () => {
+import { useNavigate } from "react-router-dom"
+const Header = () => {
+    const navigate = useNavigate();
    const toggleMenu = () => {
     const mobileMenu = document.getElementById('mobileMenu');
     if (mobileMenu.classList.contains('hidden')) {
@@ -46,10 +48,14 @@ const header = () => {
                     Resume check 
                 </a>
             </nav>
-            <button className="hidden md:block bg-[#a7a7a7] text-black py-3 px-8 rounded-full  border-none 
-             font-medium transition-all duration-500 hover:bg-white cursor-pointer z-50">
-                SIGNIN
-            </button> 
+            <button
+      onClick={() => navigate("/register")}
+      className="hidden md:block bg-[#a7a7a7] text-black py-3 px-8 rounded-full
+      border-none font-medium transition-all duration-500 hover:bg-white
+      cursor-pointer z-50"
+    >
+      SIGNIN
+    </button>
             <button onClick={toggleMenu} className='md:hidden text-3xl p-2 z-50'>
             <i class='bx bx-menu'></i> 
             </button>
@@ -83,4 +89,4 @@ const header = () => {
   )
 }
 
-export default header
+export default Header
