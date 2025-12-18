@@ -5,6 +5,7 @@ import "aos/dist/aos.css"
 import UsersManagement from "./pages/UsersManagement"
 import Home from "./pages/Home"
 import LoginPage from './pages/LoginPage';
+import UserHomepage from "./pages/UserHomepage"
 
 export default function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/register" element={<UsersManagement />} />
       <Route path="/login" element={<LoginPage />} />
+      <Route path="/userhome" element={<UserHomepage />} />
     </Routes>
   )
 }

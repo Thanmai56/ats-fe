@@ -111,6 +111,13 @@ const navigate = useNavigate();
                         </div>
                     </div>
                 )}
+                <button 
+                        onClick={() => navigate('/')}
+                        className="flex items-center gap-2 border border-[#2a2a2a] py-2 px-4 rounded-full text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a]"
+                    >
+                        <i className='bx bx-user-plus'></i>
+                        Home
+                    </button>
             </nav>
 
             <main className="flex flex-col lg:flex-row items-start justify-between min-h-[calc(100vh-6rem)] px-8 py-12">
@@ -330,7 +337,7 @@ const navigate = useNavigate();
   >
     {isLoading ? "Creating User..." : "CREATE USER"}
   </button>
-  
+  <h3>already exists?   <button className="text-[#e99b63]" onClick={() => navigate('/login')}>Login</button></h3>
 </form>
 
 

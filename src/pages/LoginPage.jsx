@@ -4,7 +4,6 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Spline from '@splinetool/react-spline';
 import { useNavigate } from 'react-router-dom';
-
 const LoginPage = () => {
     const [loginData, setLoginData] = useState({
         email: '',
@@ -32,7 +31,7 @@ const LoginPage = () => {
 
                 // Redirect to dashboard after 2 seconds
                 setTimeout(() => {
-                    navigate('/dashboard');
+                    navigate('/userhome');
                 }, 2000);
             }
         } catch (error) {

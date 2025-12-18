@@ -54,7 +54,7 @@ const Header = () => {
       border-none font-medium transition-all duration-500 hover:bg-white
       cursor-pointer z-50"
     >
-      SIGNIN
+      SIGNUP
     </button>
             <button onClick={toggleMenu} className='md:hidden text-3xl p-2 z-50'>
             <i class='bx bx-menu'></i> 
